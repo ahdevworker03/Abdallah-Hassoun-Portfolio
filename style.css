@@ -34,7 +34,9 @@ body {
   line-height: 1.6;
   color: var(--color-text-primary);
   background-color: var(--color-background);
-  transition: background-color 250ms ease, color 250ms ease;
+  transition:
+    background-color 250ms ease,
+    color 250ms ease;
 }
 
 h1,
@@ -103,6 +105,20 @@ h3 {
   font-weight: 700;
   font-size: 1.2rem;
   text-decoration: none;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navbar__logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 .navbar__links {
@@ -566,7 +582,9 @@ h3 {
 .reveal {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 400ms ease, transform 400ms ease;
+  transition:
+    opacity 400ms ease,
+    transform 400ms ease;
 }
 
 .reveal.visible {
