@@ -32,6 +32,64 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // ── Theme Toggle ─────────────────────────────────────────
+
+  const themeToggle = document.querySelector('.navbar__theme-toggle');
+  const themeIcon = themeToggle.querySelector('.theme-icon');
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    themeIcon.textContent = '🌙';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      themeIcon.textContent = '☀️';
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      themeIcon.textContent = '🌙';
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+
+  // ── Active Nav Highlighting ─────────────────────────────
+
+  const sections = document.querySelectorAll('section[id]');
+  const navItems = document.querySelectorAll('.navbar__links a');
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navItems.forEach(link => link.classList.remove('active'));
+        const activeLink = document.querySelector(
+          `.navbar__links a[href="#${entry.target.id}"]`
+        );
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(section => navObserver.observe(section));
+
+  // ── Scroll Reveal ────────────────────────────────────────
+
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+
   // ── Task 10: Scroll-to-Top Button ───────────────────────
 
   // Create and inject button
