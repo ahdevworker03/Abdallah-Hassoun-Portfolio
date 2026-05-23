@@ -1,19 +1,31 @@
 :root {
-  --color-background: #f8f9fa;
+  --color-background: #fdfdfd;
   --color-surface: #ffffff;
   --color-primary: #1a56db;
+  --color-primary-soft: rgba(26, 86, 219, 0.1);
   --color-text-primary: #111827;
-  --color-text-secondary: #6b7280;
+  --color-text-secondary: #4b5563;
   --color-accent: #10b981;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Required for Glassmorphism */
+  --color-background-rgb: 253, 253, 253;
 }
 
 [data-theme="dark"] {
-  --color-background: #0f1117;
-  --color-surface: #1a1d27;
-  --color-primary: #4f8ef7;
-  --color-text-primary: #f1f5f9;
-  --color-text-secondary: #94a3b8;
+  --color-background: #0b0e14;
+  --color-surface: #161b22;
+  --color-primary: #60a5fa;
+  --color-primary-soft: rgba(96, 165, 250, 0.1);
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #9ca3af;
   --color-accent: #34d399;
+  
+  /* Required for Glassmorphism */
+  --color-background-rgb: 11, 14, 20;
 }
 
 *,
@@ -69,27 +81,38 @@ a {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 img {
   max-width: 100%;
   display: block;
 }
+
 body {
   overflow-x: hidden;
 }
+
 h1,
 h2,
 h3 {
   line-height: 1.2;
 }
 
-/* ===== Navbar ===== */
 .navbar {
   position: sticky;
   top: 0;
+  height: 72px; /* Increased for breathing room */
+  background: rgba(var(--color-background-rgb), 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: var(--transition-smooth);
+  z-index: 1000;
+}
+
+.navbar--scrolled {
   height: 64px;
-  background: var(--color-background);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-  z-index: 100;
+  border-bottom-color: rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
 }
 
 .navbar .container {
@@ -222,11 +245,14 @@ h3 {
 
 .hero__name {
   font-family: "Sora", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  line-height: 1.15;
-  margin-bottom: 1rem;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
 }
 
 .hero__tagline {
@@ -381,6 +407,15 @@ h3 {
   background-color: rgba(16, 185, 129, 0.1);
   color: var(--color-accent);
   border: 1px solid rgba(16, 185, 129, 0.25);
+  transition: var(--transition-smooth);
+  cursor: default;
+}
+
+.skills-list li:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
 }
 
 /* ===== Projects Section ===== */
@@ -407,20 +442,20 @@ h3 {
 
 .project-card {
   background-color: var(--color-surface);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
-  padding: 1.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  transition:
-    box-shadow 180ms ease,
-    transform 180ms ease;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
 }
 
 .project-card:hover {
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
-  transform: translateY(-3px);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-soft);
 }
 
 .project-card h3 {
@@ -449,15 +484,13 @@ h3 {
 }
 
 .project-tech li {
-  display: inline-block;
-  padding: 0.3rem 0.75rem;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  font-family: "DM Sans", sans-serif;
-  background-color: rgba(107, 114, 128, 0.1);
-  color: var(--color-text-secondary);
-  border: 1px solid rgba(107, 114, 128, 0.2);
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+  border: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  border-radius: 8px;
 }
 
 .project-link {
@@ -568,7 +601,7 @@ h3 {
 }
 
 .footer__links a {
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   color: var(--color-text-secondary);
   text-decoration: none;
   transition: color 150ms ease;
@@ -581,10 +614,9 @@ h3 {
 /* ===== Scroll Reveal ===== */
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition:
-    opacity 400ms ease,
-    transform 400ms ease;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.21, 1.02, 0.47, 0.98),
+              transform 0.8s cubic-bezier(0.21, 1.02, 0.47, 0.98);
 }
 
 .reveal.visible {

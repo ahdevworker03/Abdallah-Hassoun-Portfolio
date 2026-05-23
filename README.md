@@ -8,7 +8,7 @@ A clean, modern, and responsive personal portfolio website built to showcase my 
 
 ## 🚀 Live Demo
 
-[View Live Site](https://ahdevworker03.github.io/Abdallah-Hassoun-Portfolio/) <!-- TODO: Update with your actual deployment URL if different -->
+[View Live Site](https://www.abdallahhassoun.com/) <!-- TODO: Update with your actual deployment URL if different -->
 
 ## 📸 Screenshots
 

@@ -25,6 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      navbar.classList.add("navbar--scrolled");
+    } else {
+      navbar.classList.remove("navbar--scrolled");
+    }
+  });
+
   const themeToggle = document.querySelector(".navbar__theme-toggle");
   const themeIcon = themeToggle.querySelector(".theme-icon");
   const savedTheme = localStorage.getItem("theme");
