@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     // File Layout
-    "rootDir": "Project Files",
-    "outDir": "Project Files",
+    "rootDir": ".",
+    "outDir": ".",
 
     // Environment Settings
     "module": "esnext",
@@ -32,5 +32,5 @@
     "declaration": false,
     "declarationMap": false
   },
-  "files": ["Project Files/script.ts"]
+  "files": ["script.ts"]
 }

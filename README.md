@@ -2,7 +2,7 @@
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/typescript-%233178C6.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
 A clean, modern, and responsive personal portfolio website built to showcase my journey as a Computer Science student. This project serves as a central hub for my skills, projects, and contact information.
 
@@ -28,7 +28,7 @@ A clean, modern, and responsive personal portfolio website built to showcase my 
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML5, CSS3 (Custom Variables, Flexbox, Grid)
-- **Scripting:** Vanilla JavaScript (ES6+)
+- **Scripting:** TypeScript
 - **Icons & Fonts:** Google Fonts (Sora, DM Sans)
 - **Version Control:** Git & GitHub
 
@@ -36,13 +36,17 @@ A clean, modern, and responsive personal portfolio website built to showcase my 
 
 ```text
 .
-├── assets/
-│   ├── CV File/         # Contains professional CV/Resume
-│   ├── favicon_io/      # Website favicons and manifest
-│   └── images/          # Project screenshots and images
-├── index.html           # Main entry point and site structure
-├── script.js            # Interactivity and theme logic
-└── style.css            # Custom styling and theme definitions
+├── .gitignore               # Ignored files and folders
+├── package.json             # Project dependencies and scripts
+├── tsconfig.json            # TypeScript configuration
+└── Project Files/
+    ├── assets/
+    │   ├── CV File/         # Contains professional CV/Resume
+    │   ├── favicon_io/      # Website favicons and manifest
+    │   └── images/          # Project screenshots and images
+    ├── index.html           # Main entry point and site structure
+    ├── script.ts            # TypeScript source (interactivity and theme logic)
+    └── style.css            # Custom styling and theme definitions
 ```
 
 ## 🚀 Getting Started
@@ -57,12 +61,23 @@ To get a local copy up and running, follow these simple steps:
    ```bash
    cd Abdallah-Hassoun-Portfolio
    ```
-3. **Open `index.html`:**
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Build the TypeScript source:**
+   ```bash
+   npm run build
+   ```
+5. **Open `Project Files/index.html`:**
    You can open the file directly in your browser or use an extension like "Live Server" in VS Code.
 
 ## 📜 Available Scripts
 
-Since this is a static project, no build scripts are required. Simply serve the files using any static web server.
+| Command | Description |
+|---|---|
+| `npm run build` | Compile TypeScript to JavaScript (`tsc`) |
+| `npm run typecheck` | Check for type errors without emitting files (`tsc --noEmit`)
 
 ## 🌐 Deployment
 
