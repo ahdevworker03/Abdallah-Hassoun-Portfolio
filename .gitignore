@@ -1,0 +1,7 @@
+node_modules/
+Project Files/script.js
+Project Files/script.js.map
+enhance plan.md
+*.log
+.DS_Store
+Thumbs.db
