@@ -7,9 +7,9 @@
 
 ## Current Status
 
-- **Current phase**: Phase 2 — Content / Data Extraction
-- **Completed phases**: Phase 1 — React Foundation + Tooling
-- **Next action**: Phase 2 — Content / Data Extraction
+- **Current phase**: Phase 3 — Component Migration
+- **Completed phases**: Phase 1 — React Foundation + Tooling, Phase 2 — Content / Data Extraction
+- **Next action**: Phase 3 — Component Migration
 
 ---
 
@@ -74,12 +74,12 @@
 
 ### Phase 2: Content / Data Extraction
 
-- [ ] Extract skills data + type to `src/data/skills.ts`
-- [ ] Extract projects data + type to `src/data/projects.ts`
-- [ ] Extract contact links + type to `src/data/contact.ts`
-- [ ] Extract nav links + type to `src/data/navigation.ts`
-- [ ] Hero and About text remain in components as JSX
-- [ ] **Milestone**: All content in typed data files, ready for components
+- [x] Extract skills data + type to `src/data/skills.ts`
+- [x] Extract projects data + type to `src/data/projects.ts`
+- [x] Extract contact links + type to `src/data/contact.ts`
+- [x] Extract nav links + type to `src/data/navigation.ts`
+- [x] Hero and About text remain in components as JSX
+- [x] **Milestone**: All content in typed data files, ready for components
 
 ---
 
