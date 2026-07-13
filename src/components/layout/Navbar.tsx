@@ -1,14 +1,24 @@
 import { useState } from "react"
 import { navLinks } from "../../data/navigation"
+import useScrolledNav from "../../hooks/useScrolledNav"
+import useScrollSpy from "../../hooks/useScrollSpy"
 import ThemeToggle from "../ui/ThemeToggle"
+
+const sectionIds = ["hero", "about", "skills", "projects", "contact"]
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const scrolled = useScrolledNav()
+  const activeId = useScrollSpy({ sectionIds })
 
   return (
-    <nav className="sticky top-0 z-50 h-[72px] glass-bg transition-all duration-300">
+    <nav
+      className={`sticky top-0 z-50 glass-bg transition-all duration-300 ${
+        scrolled ? "h-16 border-b border-border/5 shadow-sm" : "h-[72px]"
+      }`}
+    >
       <div className="mx-auto flex h-full max-w-[1000px] items-center justify-between px-4">
-          <a href="#hero" className="flex items-center gap-[0.6rem] font-heading text-[1.2rem] font-bold text-primary no-underline">
+        <a href="#hero" className="flex items-center gap-[0.6rem] font-heading text-[1.2rem] font-bold text-primary no-underline">
           <img
             src="/favicon_io/apple-touch-icon.png"
             alt="Abdallah Hassoun"
@@ -24,17 +34,22 @@ function Navbar() {
               : "hidden lg:flex"
           }`}
         >
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-[0.95rem] text-text-primary no-underline transition-colors duration-150 hover:text-primary"
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = activeId === link.href.replace("#", "")
+            return (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={`text-[0.95rem] no-underline transition-colors duration-150 hover:text-primary ${
+                    isActive ? "font-semibold text-primary" : "text-text-primary"
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            )
+          })}
         </ul>
 
         <div className="flex items-center gap-2">
