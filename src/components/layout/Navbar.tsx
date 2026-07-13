@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { navLinks } from "../../data/navigation"
 import useScrolledNav from "../../hooks/useScrolledNav"
 import useScrollSpy from "../../hooks/useScrollSpy"
@@ -8,11 +8,26 @@ const sectionIds = ["hero", "about", "skills", "projects", "contact"]
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const navRef = useRef<HTMLElement>(null)
   const scrolled = useScrolledNav()
   const activeId = useScrollSpy({ sectionIds })
 
+  useEffect(() => {
+    if (!menuOpen) return
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setMenuOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [menuOpen])
+
   return (
     <nav
+      ref={navRef}
       className={`sticky top-0 z-50 glass-bg transition-all duration-300 ${
         scrolled ? "h-16 border-b border-border/5 shadow-sm" : "h-[72px]"
       }`}

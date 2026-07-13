@@ -5,7 +5,7 @@ function Skills() {
   return (
     <section id="skills" className="reveal bg-background py-20">
       <div className="mx-auto max-w-container px-4 md:px-8">
-        <h2 className="mb-10 font-heading text-[2rem] font-bold text-text-primary">
+        <h2 className="mb-10 font-heading text-[1.6rem] font-bold text-text-primary md:text-[2rem]">
           Skills
         </h2>
         {skillCategories.map((category) => (

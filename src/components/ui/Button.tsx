@@ -10,16 +10,15 @@ interface ButtonProps {
 
 const variantStyles: Record<ButtonProps["variant"], string> = {
   primary:
-    "border-primary bg-primary text-white hover:brightness-90",
+    "border-2 border-primary bg-primary text-white hover:brightness-90",
   secondary:
-    "border-primary bg-transparent text-primary hover:bg-primary hover:text-white",
-  cv: "border-text-secondary bg-transparent text-text-secondary hover:bg-text-secondary hover:text-white",
+    "border border-primary bg-transparent text-primary hover:bg-primary hover:text-white",
+  cv: "border border-text-secondary bg-transparent text-text-secondary hover:bg-text-secondary hover:text-white",
 }
 
 function Button({ variant, href, target, rel, download, className = "", children }: ButtonProps) {
   const base = [
-    "inline-block rounded-md border-2 px-7 py-3 font-body text-base font-medium no-underline transition-all duration-200",
-    variant === "cv" ? "border" : "border-2",
+    "inline-block rounded-md px-7 py-3 font-body text-base font-medium no-underline transition-all duration-200",
     variantStyles[variant],
     className,
   ].join(" ")

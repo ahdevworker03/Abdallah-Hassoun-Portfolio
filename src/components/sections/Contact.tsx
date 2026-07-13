@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section id="contact" className="reveal bg-background py-20 text-center">
       <div className="mx-auto max-w-[600px] px-4">
-        <h2 className="mb-4 font-heading text-[2rem] font-bold text-text-primary">
+        <h2 className="mb-4 font-heading text-[1.6rem] font-bold text-text-primary md:text-[2rem]">
           Get In Touch
         </h2>
         <p className="mb-8 text-base leading-relaxed text-text-secondary">
