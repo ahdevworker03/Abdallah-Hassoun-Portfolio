@@ -1,8 +1,17 @@
+import Navbar from "./components/layout/Navbar"
+import Footer from "./components/layout/Footer"
+import ScrollToTop from "./components/ui/ScrollToTop"
+
 function App() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <p className="text-text-secondary">Portfolio — coming soon</p>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        {/* Sections rendered in Phase 3B */}
+      </main>
+      <Footer />
+      <ScrollToTop />
+    </>
   )
 }
 

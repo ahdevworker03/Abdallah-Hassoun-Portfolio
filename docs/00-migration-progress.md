@@ -101,10 +101,10 @@
 
 **Layout components:**
 
-- [ ] `Navbar.tsx` (owns mobile menu state internally)
-- [ ] `Footer.tsx`
-- [ ] `ScrollToTop.tsx`
-- [ ] `ThemeToggle.tsx`
+- [x] `Navbar.tsx` (owns mobile menu state internally)
+- [x] `Footer.tsx`
+- [x] `ScrollToTop.tsx`
+- [x] `ThemeToggle.tsx`
 
 - [ ] **Milestone**: All sections render with correct content and basic styling
 
