@@ -3,7 +3,7 @@ import SkillPill from "../ui/SkillPill"
 
 function Skills() {
   return (
-    <section id="skills" className="bg-background py-20">
+    <section id="skills" className="reveal bg-background py-20">
       <div className="mx-auto max-w-container px-4 md:px-8">
         <h2 className="mb-10 font-heading text-[2rem] font-bold text-text-primary">
           Skills

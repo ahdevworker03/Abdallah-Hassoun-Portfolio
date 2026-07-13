@@ -6,8 +6,10 @@ import Projects from "./components/sections/Projects"
 import Contact from "./components/sections/Contact"
 import Footer from "./components/layout/Footer"
 import ScrollToTop from "./components/ui/ScrollToTop"
+import useScrollReveal from "./hooks/useScrollReveal"
 
 function App() {
+  useScrollReveal()
   return (
     <>
       <Navbar />

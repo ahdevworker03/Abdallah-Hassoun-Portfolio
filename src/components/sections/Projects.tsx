@@ -3,7 +3,7 @@ import ProjectCard from "../ui/ProjectCard"
 
 function Projects() {
   return (
-    <section id="projects" className="bg-surface py-20">
+    <section id="projects" className="reveal bg-surface py-20">
       <div className="mx-auto grid max-w-container grid-cols-1 gap-6 px-4 md:grid-cols-2 md:px-8 lg:grid-cols-3">
         <h2 className="col-span-full mb-10 font-heading text-[2rem] font-bold text-text-primary">
           Projects

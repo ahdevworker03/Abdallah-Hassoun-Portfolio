@@ -3,7 +3,7 @@ import Button from "../ui/Button"
 
 function Contact() {
   return (
-    <section id="contact" className="bg-background py-20 text-center">
+    <section id="contact" className="reveal bg-background py-20 text-center">
       <div className="mx-auto max-w-[600px] px-4">
         <h2 className="mb-4 font-heading text-[2rem] font-bold text-text-primary">
           Get In Touch
