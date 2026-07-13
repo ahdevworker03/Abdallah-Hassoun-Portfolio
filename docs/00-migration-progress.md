@@ -53,6 +53,15 @@
 
 ---
 
+## Documentation Rules
+
+- When implementing framework-specific functionality, consult official documentation first if behavior or configuration is uncertain.
+- Prefer official documentation sources for React, Vite, Tailwind CSS, and TypeScript.
+- Do not introduce APIs, patterns, or configurations without understanding their purpose.
+- Avoid adding dependencies or abstractions unless they are justified by the project requirements.
+
+---
+
 ## Migration Phases
 
 ### Phase 1: React Foundation + Tooling
@@ -87,17 +96,17 @@
 
 **Reusable UI components:**
 
-- [ ] `Button.tsx` (3 variants: primary, secondary, CV)
-- [ ] `SkillPill.tsx`
-- [ ] `ProjectCard.tsx`
+- [x] `Button.tsx` (3 variants: primary, secondary, CV)
+- [x] `SkillPill.tsx`
+- [x] `ProjectCard.tsx`
 
 **Section components:**
 
-- [ ] `Hero.tsx`
-- [ ] `About.tsx`
-- [ ] `Skills.tsx`
-- [ ] `Projects.tsx`
-- [ ] `Contact.tsx` (contact links use Button, no standalone ContactLink)
+- [x] `Hero.tsx`
+- [x] `About.tsx`
+- [x] `Skills.tsx`
+- [x] `Projects.tsx`
+- [x] `Contact.tsx` (contact links use Button, no standalone ContactLink)
 
 **Layout components:**
 
@@ -106,7 +115,7 @@
 - [x] `ScrollToTop.tsx`
 - [x] `ThemeToggle.tsx`
 
-- [ ] **Milestone**: All sections render with correct content and basic styling
+- [x] **Milestone**: All sections render with correct content and basic styling
 
 ---
 
