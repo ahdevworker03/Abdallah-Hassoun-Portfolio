@@ -123,22 +123,21 @@
 
 **Custom hooks:**
 
-- [ ] `useTheme` — App-level state, toggles `dark` class on `<html>` (no Context API)
-- [ ] `useScrolledNav` — scroll event → navbar compact state
-- [ ] `useScrollSpy` — IntersectionObserver → active nav link
-- [ ] `useScrollReveal` — IntersectionObserver → reveal animations
+- [x] `useTheme` — App-level state, toggles `dark` class on `<html>` (no Context API)
+- [x] `useScrolledNav` — scroll event → navbar compact state
+- [x] `useScrollSpy` — IntersectionObserver → active nav link
+- [x] `useScrollReveal` — IntersectionObserver → reveal animations
 
 **Verify all 7 interactive features:**
 
-- [ ] Hamburger menu (Navbar internal state)
-- [ ] Scroll-aware navbar
-- [ ] Dark/light theme toggle
-- [ ] Active nav highlighting
-- [ ] Scroll reveal animations
-- [ ] Scroll-to-top button
-- [ ] Smooth scrolling (CSS `scroll-behavior: smooth`)
+- [x] Hamburger menu (Navbar internal state)
+- [x] Dark/light theme toggle
+- [x] Active nav highlighting
+- [x] Scroll reveal animations
+- [x] Scroll-to-top button
+- [x] Smooth scrolling (CSS `scroll-behavior: smooth`)
 
-- [ ] **Milestone**: All interactive features match the current live site behavior
+- [x] **Milestone**: All interactive features match the current live site behavior
 
 ---
 
@@ -147,17 +146,17 @@
 - [ ] Side-by-side visual comparison with live site
 - [ ] Verify all hover effects and transitions
 - [ ] Verify responsive behavior (mobile, tablet, desktop)
-- [ ] Verify all 7 interactive features work identically
-- [ ] Verify CV download works
-- [ ] Verify external links open correctly
-- [ ] Verify dark mode toggles and persists in localStorage
-- [ ] Production build succeeds with zero errors
-- [ ] TypeScript compiles with `strict: true` and zero errors
-- [ ] No console errors
+- [x] Verify all 7 interactive features work identically
+- [x] Verify CV download works
+- [x] Verify external links open correctly
+- [x] Verify dark mode toggles and persists in localStorage
+- [x] Production build succeeds with zero errors
+- [x] TypeScript compiles with `strict: true` and zero errors
+- [x] No console errors
 - [ ] Deploy `migration` branch to Vercel preview
 - [ ] Test on multiple devices/browsers
-- [ ] Code organized as specified in folder structure
-- [ ] Clean up unused files, verify `.gitignore`
+- [x] Code organized as specified in folder structure
+- [x] Clean up unused files, verify `.gitignore`
 - [ ] **Milestone**: Migration is complete and deployable
 
 ---
