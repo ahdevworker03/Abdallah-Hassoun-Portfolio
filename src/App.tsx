@@ -1,6 +1,7 @@
 import Navbar from "./components/layout/Navbar"
 import Hero from "./components/sections/Hero"
 import About from "./components/sections/About"
+import Skills from "./components/sections/Skills"
 import Footer from "./components/layout/Footer"
 import ScrollToTop from "./components/ui/ScrollToTop"
 
@@ -11,10 +12,10 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Skills />
         {/*
-          Skills — Phase 3C
-          Projects — Phase 3C
-          Contact — Phase 3C
+          Projects — Phase 3C-2
+          Contact — Phase 3C-2
         */}
       </main>
       <Footer />

@@ -1,3 +1,5 @@
+import Button from "../ui/Button"
+
 function Hero() {
   return (
     <section
@@ -19,25 +21,28 @@ function Hero() {
           algorithms, and what it means to write good code.
         </p>
         <div className="flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center">
-          <a
+          <Button
+            variant="primary"
             href="#projects"
-            className="inline-block w-full max-w-[280px] rounded-md border-2 border-primary bg-primary px-7 py-3 text-center font-body text-base font-medium text-white no-underline transition-all duration-200 hover:brightness-90 md:w-auto"
+            className="w-full max-w-[280px] md:w-auto"
           >
             View My Projects
-          </a>
-          <a
+          </Button>
+          <Button
+            variant="secondary"
             href="#contact"
-            className="inline-block w-full max-w-[280px] rounded-md border-2 border-primary bg-transparent px-7 py-3 text-center font-body text-base font-medium text-primary no-underline transition-all duration-200 hover:bg-primary hover:text-white md:w-auto"
+            className="w-full max-w-[280px] md:w-auto"
           >
             Get In Touch
-          </a>
-          <a
+          </Button>
+          <Button
+            variant="cv"
             href="/CV File/Abdallah Hassoun.pdf"
             download="Abdallah-Hassoun-CV"
-            className="inline-block w-full max-w-[280px] rounded-md border border-text-secondary bg-transparent px-7 py-3 text-center font-body text-base font-medium text-text-secondary no-underline transition-all duration-200 hover:bg-text-secondary hover:text-white md:w-auto"
+            className="w-full max-w-[280px] md:w-auto"
           >
             Download CV
-          </a>
+          </Button>
         </div>
       </div>
     </section>
