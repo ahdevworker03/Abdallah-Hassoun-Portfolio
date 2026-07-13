@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #fafafa;
+  --color-surface: #ffffff;
+  --color-primary: #2563eb;
+  --color-primary-soft: rgba(37, 99, 235, 0.08);
+  --color-accent: #10b981;
+  --color-accent-soft: rgba(16, 185, 129, 0.08);
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-border: rgba(0, 0, 0, 0.06);
+  --color-glass-bg: rgba(255, 255, 255, 0.7);
+  --color-glass-border: rgba(255, 255, 255, 0.3);
+  --color-glass-shadow: rgba(0, 0, 0, 0.04);
+}
+
+.dark {
+  --color-background: #0a0e14;
+  --color-surface: #161b22;
+  --color-primary: #60a5fa;
+  --color-primary-soft: rgba(96, 165, 250, 0.1);
+  --color-accent: #34d399;
+  --color-accent-soft: rgba(52, 211, 153, 0.1);
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #9ca3af;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-glass-bg: rgba(22, 27, 34, 0.7);
+  --color-glass-border: rgba(255, 255, 255, 0.06);
+  --color-glass-shadow: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: "DM Sans", sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #1a56db, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-bg {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.dark .glass-bg {
+  background: rgba(22, 27, 34, 0.8);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 800ms cubic-bezier(0.21, 1.02, 0.47, 0.98),
+    transform 800ms cubic-bezier(0.21, 1.02, 0.47, 0.98);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
