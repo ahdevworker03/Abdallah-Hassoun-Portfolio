@@ -21,8 +21,18 @@ function Navbar() {
       }
     }
 
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMenuOpen(false)
+      }
+    }
+
     document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
+    document.addEventListener("keydown", handleKeyDown)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+      document.removeEventListener("keydown", handleKeyDown)
+    }
   }, [menuOpen])
 
   return (
@@ -55,6 +65,7 @@ function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
+                  aria-current={isActive ? "page" : undefined}
                   className={`text-[0.95rem] no-underline transition-colors duration-150 hover:text-primary ${
                     isActive ? "font-semibold text-primary" : "text-text-primary"
                   }`}
@@ -70,7 +81,8 @@ function Navbar() {
         <div className="flex items-center gap-2">
           <button
             className="flex cursor-pointer flex-col gap-[5px] border-none bg-transparent p-0 lg:hidden"
-            aria-label="Toggle menu"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
             onClick={() => setMenuOpen((prev) => !prev)}
           >
             <span className="block h-[2px] w-6 rounded-sm bg-text-primary" />
