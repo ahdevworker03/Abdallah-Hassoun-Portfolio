@@ -27,8 +27,9 @@ function ProjectCard({ project }: ProjectCardProps) {
         href={project.githubUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-auto inline-block text-[0.9rem] font-medium text-primary no-underline transition-all duration-200 hover:text-accent hover:scale-[1.02]"
+        className="mt-auto inline-flex items-center gap-2 text-[0.9rem] font-medium text-primary no-underline transition-all duration-200 hover:text-accent hover:scale-[1.02]"
       >
+        <i className="fa-brands fa-github text-sm" />
         View on GitHub
       </a>
     </article>

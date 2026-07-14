@@ -1,5 +1,18 @@
 import Button from "../ui/Button"
 
+const socialLinks = [
+  {
+    label: "GitHub",
+    url: "https://github.com/ahdevworker03",
+    icon: "fa-brands fa-github",
+  },
+  {
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/ahdevworker03/",
+    icon: "fa-brands fa-linkedin",
+  },
+]
+
 function Hero() {
   return (
     <section
@@ -43,6 +56,20 @@ function Hero() {
           >
             Download CV
           </Button>
+        </div>
+        <div className="mt-6 flex items-center gap-5">
+          {socialLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.label}
+              className="inline-block text-[1.2rem] text-text-secondary no-underline transition-all duration-200 hover:scale-110 hover:text-primary"
+            >
+              <i className={link.icon} />
+            </a>
+          ))}
         </div>
       </div>
     </section>
