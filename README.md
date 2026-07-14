@@ -1,12 +1,17 @@
 # Abdallah Hassoun — Portfolio
 
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=white)](https://vercel.com)
+
 Personal portfolio website for Abdallah Hassoun, a first-year Computer Science student and aspiring software engineer. Built to showcase projects, skills, and provide a way to get in touch.
 
 **Live site**: [https://www.abdallahhassoun.com](https://www.abdallahhassoun.com)
 
 ## Features
 
-- Light / dark theme with persistent user preference
 - Responsive layout — mobile-first, adapts to all screen sizes
 - Scroll-triggered section reveal animations
 - Active navigation highlighting based on scroll position
@@ -26,7 +31,7 @@ Personal portfolio website for Abdallah Hassoun, a first-year Computer Science s
 | Icons       | Font Awesome 6 (CDN)                   |
 | Fonts       | Sora (headings), DM Sans (body)        |
 | Deployment  | Vercel                                 |
-| Lint/Format | ESLint + Prettier                      |
+| Lint/Format | ESLint 9 + Prettier                    |
 
 ## Project Structure
 
@@ -35,9 +40,9 @@ src/
 ├── components/
 │   ├── layout/       # Navbar, Footer
 │   ├── sections/     # Hero, About, Skills, Projects, Contact
-│   └── ui/           # Button, ProjectCard, SkillPill, ThemeToggle, ScrollToTop
+│   └── ui/           # Button, ProjectCard, SkillPill, ScrollToTop
 ├── data/             # Static content (navigation, skills, projects, contact)
-├── hooks/            # useTheme, useScrollSpy, useScrollReveal, useScrolledNav
+├── hooks/            # useScrollSpy, useScrollReveal, useScrolledNav
 ├── App.tsx           # Root component
 ├── main.tsx          # Entry point
 └── index.css         # Tailwind directives, CSS custom properties, utilities
@@ -52,9 +57,11 @@ Content is separated from UI in `src/data/`. Editing a project, skill, or nav li
 - Node.js >= 18
 - npm >= 9
 
-### Installation
+### Clone & Install
 
 ```
+git clone <repo-url>
+cd <repo-directory>
 npm install
 ```
 
@@ -73,6 +80,21 @@ npm run build
 ```
 
 Produces an optimized production build in `dist/`.
+
+### Preview
+
+```
+npm run preview
+```
+
+Serves the production build locally.
+
+### Lint & Format
+
+```
+npm run lint
+npm run format
+```
 
 ### Environment Variables
 
@@ -100,12 +122,12 @@ npx vercel --prod
 - ARIA attributes on nav (`aria-current`), hamburger (`aria-expanded`), and icon links (`aria-label`)
 - Semantic HTML — landmarks, headings, labeled form controls
 - `prefers-reduced-motion` fully supported — all animations disabled when detected
-- Proper color contrast in both light and dark themes
+- Proper color contrast throughout
 
 ## Performance
 
 - Static single-page build — no client-side routing overhead
-- CSS custom properties for theme switching (no reflows)
+- CSS custom properties (no reflows on theme values)
 - GPU-accelerated animations (opacity and transform only)
 - No external runtime dependencies beyond React
 
@@ -118,6 +140,19 @@ _Screenshots coming soon._
 - Project screenshots with live demo links
 - Self-hosted fonts (remove Google Fonts CDN dependency)
 - Tree-shaken icon library (replace full Font Awesome CDN with individual imports)
+
+## Documentation
+
+- [Architecture](docs/01-architecture.md) — project structure, data flow, state management
+- [Development Rules](docs/02-development-rules.md) — guidelines for contributing
+- [Design System](docs/03-design-system.md) — colors, typography, components
+- [Content Guide](docs/04-content-guide.md) — editing portfolio content
+- [Roadmap](docs/05-roadmap.md) — planned improvements
+- [Changelog](docs/06-changelog.md) — version history
+
+## Contributing
+
+See [Development Rules](docs/02-development-rules.md) for guidelines before making changes.
 
 ## License
 
