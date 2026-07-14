@@ -6,8 +6,8 @@ interface ProjectCardProps {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="flex flex-col gap-4 rounded-2xl border border-border bg-surface p-8 shadow-sm transition-all duration-300 ease-smooth hover:-translate-y-2 hover:border-primary-soft hover:shadow-lg">
-      <h3 className="m-0 font-heading text-[1.05rem] font-semibold text-text-primary">
+    <article className="flex flex-col gap-4 rounded-2xl border border-border bg-surface p-8 shadow-sm transition-all duration-300 ease-smooth hover:-translate-y-2 hover:border-primary-soft hover:shadow-glow">
+      <h3 className="m-0 font-heading text-lg font-medium text-text-primary">
         {project.title}
       </h3>
       <p className="m-0 flex-1 text-[0.95rem] leading-relaxed text-text-secondary">
@@ -27,7 +27,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         href={project.githubUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-auto inline-block text-[0.9rem] font-medium text-primary no-underline transition-colors duration-180 hover:text-accent"
+        className="mt-auto inline-block text-[0.9rem] font-medium text-primary no-underline transition-all duration-200 hover:text-accent hover:scale-[1.02]"
       >
         View on GitHub
       </a>

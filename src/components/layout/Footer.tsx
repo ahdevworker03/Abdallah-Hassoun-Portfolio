@@ -12,7 +12,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-[1.25rem] text-text-secondary no-underline transition-colors duration-150 hover:text-primary"
+              className="inline-block text-[1.25rem] text-text-secondary no-underline transition-all duration-200 hover:scale-110 hover:text-primary"
             >
               <i className="fa-brands fa-instagram" />
             </a>
@@ -21,7 +21,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-[1.25rem] text-text-secondary no-underline transition-colors duration-150 hover:text-primary"
+              className="inline-block text-[1.25rem] text-text-secondary no-underline transition-all duration-200 hover:scale-110 hover:text-primary"
             >
               <i className="fa-brands fa-linkedin" />
             </a>
@@ -30,7 +30,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-[1.25rem] text-text-secondary no-underline transition-colors duration-150 hover:text-primary"
+              className="inline-block text-[1.25rem] text-text-secondary no-underline transition-all duration-200 hover:scale-110 hover:text-primary"
             >
               <i className="fa-brands fa-github" />
             </a>

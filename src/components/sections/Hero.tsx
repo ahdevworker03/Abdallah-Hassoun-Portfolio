@@ -4,16 +4,16 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="flex min-h-screen items-center justify-center bg-background text-center"
+      className="flex min-h-screen items-center justify-center bg-background text-center gradient-hero"
     >
       <div className="mx-auto flex max-w-[680px] flex-col items-center px-4">
         <p className="mb-2 text-sm uppercase tracking-widest text-text-secondary">
           Hi, I'm
         </p>
-        <h1 className="mb-6 font-heading text-[2.5rem] font-bold leading-tight tracking-tighter text-text-primary md:text-[4rem] gradient-text">
+        <h1 className="mb-6 font-heading text-5xl font-bold leading-tight tracking-tighter text-text-primary md:text-7xl gradient-text">
           Abdallah Hassoun
         </h1>
-        <p className="mb-5 text-[1.1rem] font-medium text-text-secondary">
+        <p className="mb-5 text-lg font-medium leading-relaxed text-text-secondary">
           First-year CS Student &middot; Aspiring Software Engineer
         </p>
         <p className="mb-8 max-w-[560px] text-base leading-relaxed text-text-secondary">

@@ -53,11 +53,12 @@ function Navbar() {
         </a>
 
         <ul
-          className={`m-0 flex list-none gap-8 p-0 ${
+          aria-hidden={!menuOpen}
+          className={`m-0 list-none p-0 transition-all duration-300 ease-smooth ${
             menuOpen
-              ? "absolute left-0 top-16 flex w-full flex-col gap-5 bg-surface p-6 shadow-md"
-              : "hidden lg:flex"
-          }`}
+              ? "absolute left-0 top-16 flex w-full flex-col gap-5 bg-surface p-6 shadow-md opacity-100 translate-y-0 pointer-events-auto"
+              : "absolute left-0 top-16 flex w-full flex-col gap-5 bg-surface p-6 shadow-md opacity-0 -translate-y-2 pointer-events-none"
+          } lg:relative lg:top-0 lg:flex lg:w-auto lg:flex-row lg:gap-8 lg:bg-transparent lg:p-0 lg:shadow-none lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto`}
         >
           {navLinks.map((link) => {
             const isActive = activeId === link.href.replace("#", "")
@@ -66,7 +67,8 @@ function Navbar() {
                 <a
                   href={link.href}
                   aria-current={isActive ? "page" : undefined}
-                  className={`text-[0.95rem] no-underline transition-colors duration-150 hover:text-primary ${
+                  tabIndex={menuOpen ? undefined : -1}
+                  className={`text-[0.95rem] no-underline transition-all duration-200 hover:text-primary hover:tracking-wide ${
                     isActive ? "font-semibold text-primary" : "text-text-primary"
                   }`}
                   onClick={() => setMenuOpen(false)}
@@ -85,9 +87,9 @@ function Navbar() {
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((prev) => !prev)}
           >
-            <span className="block h-[2px] w-6 rounded-sm bg-text-primary" />
-            <span className="block h-[2px] w-6 rounded-sm bg-text-primary" />
-            <span className="block h-[2px] w-6 rounded-sm bg-text-primary" />
+            <span className={`block h-[2px] w-6 rounded-sm bg-text-primary transition-all duration-300 ease-smooth ${menuOpen ? "translate-y-[7px] rotate-45" : ""}`} />
+            <span className={`block h-[2px] w-6 rounded-sm bg-text-primary transition-all duration-300 ease-smooth ${menuOpen ? "opacity-0" : ""}`} />
+            <span className={`block h-[2px] w-6 rounded-sm bg-text-primary transition-all duration-300 ease-smooth ${menuOpen ? "-translate-y-[7px] -rotate-45" : ""}`} />
           </button>
           <ThemeToggle />
         </div>
