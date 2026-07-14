@@ -3,6 +3,7 @@ import { contactLinks } from "../../data/contact"
 import Button from "../ui/Button"
 
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT
+const FORMSPREE_MISSING = !FORMSPREE_ENDPOINT
 
 interface FormData {
   name: string
@@ -65,6 +66,11 @@ function Contact() {
     setTouched({ name: true, email: true, message: true })
 
     if (Object.keys(validationErrors).length > 0) return
+
+    if (FORMSPREE_MISSING) {
+      setStatus("error")
+      return
+    }
 
     setStatus("loading")
     try {
@@ -175,6 +181,15 @@ function Contact() {
               )}
             </div>
 
+            {FORMSPREE_MISSING && (
+              <div
+                className="rounded-md bg-amber-50 px-4 py-3 text-sm text-amber-700 dark:bg-amber-900/20 dark:text-amber-400"
+                role="alert"
+              >
+                The contact form is not configured yet. Please email me directly using the links below.
+              </div>
+            )}
+
             {status === "error" && (
               <div
                 className="rounded-md bg-red-50 px-4 py-3 text-sm text-red-600 dark:bg-red-900/20 dark:text-red-400"
@@ -186,7 +201,7 @@ function Contact() {
 
             <button
               type="submit"
-              disabled={status === "loading"}
+              disabled={status === "loading" || FORMSPREE_MISSING}
               className="w-full rounded-md border-2 border-primary bg-primary px-7 py-3 font-body text-base font-medium text-white no-underline transition-all duration-200 hover:brightness-110 hover:shadow-lg hover:shadow-primary/25 hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100 disabled:hover:shadow-none"
             >
               {status === "loading" ? "Sending..." : "Send Message"}

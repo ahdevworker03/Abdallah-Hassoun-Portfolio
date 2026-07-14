@@ -20,6 +20,13 @@ function Hero() {
       className="flex min-h-screen items-center justify-center bg-background text-center gradient-hero"
     >
       <div className="mx-auto flex max-w-[680px] flex-col items-center px-4">
+        <img
+          src="/images/profile.jpg"
+          alt="Abdallah Hassoun"
+          width={120}
+          height={120}
+          className="mb-6 h-[120px] w-[120px] rounded-full border-[3px] border-primary-soft object-cover shadow-lg md:h-[140px] md:w-[140px]"
+        />
         <p className="mb-2 text-sm uppercase tracking-widest text-text-secondary">
           Hi, I'm
         </p>

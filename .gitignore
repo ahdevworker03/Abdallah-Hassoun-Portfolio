@@ -25,3 +25,7 @@ dist-ssr
 
 # Local documentation (not committed)
 /docs/
+
+.env
+.env.*
+!.env.example

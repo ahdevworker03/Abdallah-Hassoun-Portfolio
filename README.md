@@ -1,32 +1,132 @@
-# React + TypeScript + Vite
+# Abdallah Hassoun — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio website for Abdallah Hassoun, a first-year Computer Science student and aspiring software engineer. Built to showcase projects, skills, and provide a way to get in touch.
 
-Currently, two official plugins are available:
+**Live site**: [https://www.abdallahhassoun.com](https://www.abdallahhassoun.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Light / dark theme with persistent user preference
+- Responsive layout — mobile-first, adapts to all screen sizes
+- Scroll-triggered section reveal animations
+- Active navigation highlighting based on scroll position
+- Interactive contact form with inline validation (powered by Formspree)
+- Downloadable CV
+- Keyboard accessible with skip-to-content link and focus indicators
+- Respects `prefers-reduced-motion`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+| Layer       | Technology                              |
+| ----------- | --------------------------------------- |
+| Framework   | React 19                                |
+| Language    | TypeScript (strict)                     |
+| Bundler     | Vite 8                                  |
+| Styling     | Tailwind CSS 3 + CSS custom properties  |
+| Icons       | Font Awesome 6 (CDN)                    |
+| Fonts       | Sora (headings), DM Sans (body)         |
+| Deployment  | Vercel                                  |
+| Lint/Format | ESLint + Prettier                       |
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Project Structure
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```
+src/
+├── components/
+│   ├── layout/       # Navbar, Footer
+│   ├── sections/     # Hero, About, Skills, Projects, Contact
+│   └── ui/           # Button, ProjectCard, SkillPill, ThemeToggle, ScrollToTop
+├── data/             # Static content (navigation, skills, projects, contact)
+├── hooks/            # useTheme, useScrollSpy, useScrollReveal, useScrolledNav
+├── App.tsx           # Root component
+├── main.tsx          # Entry point
+└── index.css         # Tailwind directives, CSS custom properties, utilities
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Content is separated from UI in `src/data/`. Editing a project, skill, or nav link only requires changing the corresponding data file — no component edits needed.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js >= 18
+- npm >= 9
+
+### Installation
+
+```
+npm install
+```
+
+### Development
+
+```
+npm run dev
+```
+
+Opens a local dev server at `http://localhost:5173` with hot module replacement.
+
+### Build
+
+```
+npm run build
+```
+
+Produces an optimized production build in `dist/`.
+
+### Environment Variables
+
+| Variable                    | Required | Description                    |
+| --------------------------- | -------- | ------------------------------ |
+| `VITE_FORMSPREE_ENDPOINT`   | Yes      | Formspree form endpoint URL    |
+
+Copy `.env.example` to `.env` and set the value. The contact form will not work without this variable.
+
+### Deployment
+
+The project is configured for Vercel deployment. Push to the `main` branch — Vercel auto-deploys using the settings in `vercel.json`.
+
+Manual deploy:
+
+```
+npm run build
+npx vercel --prod
+```
+
+## Accessibility
+
+- Skip-to-content link visible on tab focus
+- Custom focus-visible indicators on all interactive elements
+- ARIA attributes on nav (`aria-current`), hamburger (`aria-expanded`), and icon links (`aria-label`)
+- Semantic HTML — landmarks, headings, labeled form controls
+- `prefers-reduced-motion` fully supported — all animations disabled when detected
+- Proper color contrast in both light and dark themes
+
+## Performance
+
+- Static single-page build — no client-side routing overhead
+- CSS custom properties for theme switching (no reflows)
+- GPU-accelerated animations (opacity and transform only)
+- No external runtime dependencies beyond React
+
+## Screenshots
+
+*Screenshots coming soon.*
+
+## Future Improvements
+
+- Project screenshots with live demo links
+- Self-hosted fonts (remove Google Fonts CDN dependency)
+- Tree-shaken icon library (replace full Font Awesome CDN with individual imports)
+
+## License
+
+This project is for personal portfolio use.
+
+## Author
+
+**Abdallah Hassoun**
+
+- GitHub: [https://github.com/ahdevworker03](https://github.com/ahdevworker03)
+- LinkedIn: [https://www.linkedin.com/in/ahdevworker03/](https://www.linkedin.com/in/ahdevworker03/)
+- Portfolio: [https://www.abdallahhassoun.com](https://www.abdallahhassoun.com)
