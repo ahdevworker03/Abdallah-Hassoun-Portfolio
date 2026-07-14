@@ -1,3 +1,5 @@
+import { navLinks } from "../../data/navigation"
+
 function Footer() {
   return (
     <footer className="border-t border-border bg-surface py-8">
@@ -6,6 +8,17 @@ function Footer() {
           <p className="m-0 text-sm text-text-secondary">
             &copy; 2026 Abdallah Hassoun.
           </p>
+          <nav aria-label="Quick navigation" className="flex gap-5">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm text-text-secondary no-underline transition-colors duration-200 hover:text-primary"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
           <div className="flex gap-6">
             <a
               href="https://www.instagram.com/abdallahhassoun.dev/"

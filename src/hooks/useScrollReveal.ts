@@ -14,7 +14,7 @@ function useScrollReveal() {
           }
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.2 },
     )
 
     elements.forEach((el) => observer.observe(el))
