@@ -18,7 +18,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         {project.tech.map((tech) => (
           <li
             key={tech}
-            className="rounded-lg bg-primary-soft px-[0.8rem] py-[0.4rem] text-xs font-semibold text-primary"
+            className="rounded-lg bg-accent-soft px-[0.8rem] py-[0.4rem] text-xs font-semibold text-accent"
           >
             {tech}
           </li>
@@ -28,7 +28,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         href={project.githubUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative z-10 mt-auto inline-flex items-center gap-2 text-[0.9rem] font-medium text-primary no-underline transition-all duration-200 hover:text-accent hover:scale-[1.02]"
+        className="relative z-10 mt-auto inline-flex items-center gap-2 text-[0.9rem] font-medium text-accent no-underline transition-all duration-200 hover:text-primary hover:scale-[1.02]"
       >
         <i className="fa-brands fa-github text-sm" />
         View on GitHub

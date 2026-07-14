@@ -10,9 +10,9 @@ interface ButtonProps {
 
 const variantStyles: Record<ButtonProps["variant"], string> = {
   primary:
-    "border-2 border-primary bg-primary text-white hover:brightness-110 hover:shadow-lg hover:shadow-primary/25",
+    "border-2 border-primary bg-primary text-on-primary hover:bg-primary-hover hover:shadow-lg hover:shadow-primary/25",
   secondary:
-    "border border-primary bg-transparent text-primary hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/20",
+    "border border-primary bg-transparent text-primary hover:bg-primary hover:text-on-primary hover:shadow-lg hover:shadow-primary/20",
   cv: "btn-cv border border-text-secondary bg-transparent text-text-secondary hover:bg-text-secondary hover:text-white hover:shadow-lg hover:shadow-text-secondary/15",
 }
 

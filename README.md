@@ -17,16 +17,16 @@ Personal portfolio website for Abdallah Hassoun, a first-year Computer Science s
 
 ## Tech Stack
 
-| Layer       | Technology                              |
-| ----------- | --------------------------------------- |
-| Framework   | React 19                                |
-| Language    | TypeScript (strict)                     |
-| Bundler     | Vite 8                                  |
-| Styling     | Tailwind CSS 3 + CSS custom properties  |
-| Icons       | Font Awesome 6 (CDN)                    |
-| Fonts       | Sora (headings), DM Sans (body)         |
-| Deployment  | Vercel                                  |
-| Lint/Format | ESLint + Prettier                       |
+| Layer       | Technology                             |
+| ----------- | -------------------------------------- |
+| Framework   | React 19                               |
+| Language    | TypeScript (strict)                    |
+| Bundler     | Vite 8                                 |
+| Styling     | Tailwind CSS 3 + CSS custom properties |
+| Icons       | Font Awesome 6 (CDN)                   |
+| Fonts       | Sora (headings), DM Sans (body)        |
+| Deployment  | Vercel                                 |
+| Lint/Format | ESLint + Prettier                      |
 
 ## Project Structure
 
@@ -76,9 +76,9 @@ Produces an optimized production build in `dist/`.
 
 ### Environment Variables
 
-| Variable                    | Required | Description                    |
-| --------------------------- | -------- | ------------------------------ |
-| `VITE_FORMSPREE_ENDPOINT`   | Yes      | Formspree form endpoint URL    |
+| Variable                  | Required | Description                 |
+| ------------------------- | -------- | --------------------------- |
+| `VITE_FORMSPREE_ENDPOINT` | Yes      | Formspree form endpoint URL |
 
 Copy `.env.example` to `.env` and set the value. The contact form will not work without this variable.
 
@@ -111,7 +111,7 @@ npx vercel --prod
 
 ## Screenshots
 
-*Screenshots coming soon.*
+_Screenshots coming soon._
 
 ## Future Improvements
 
@@ -129,4 +129,5 @@ This project is for personal portfolio use.
 
 - GitHub: [https://github.com/ahdevworker03](https://github.com/ahdevworker03)
 - LinkedIn: [https://www.linkedin.com/in/ahdevworker03/](https://www.linkedin.com/in/ahdevworker03/)
-- Portfolio: [https://www.abdallahhassoun.com](https://www.abdallahhassoun.com)
+- Instagram: [https://www.instagram.com/abdallahhassoun.dev/](https://www.instagram.com/abdallahhassoun.dev/)
+- X/Twitter: [https://x.com/ahdevworker03](https://x.com/ahdevworker03)

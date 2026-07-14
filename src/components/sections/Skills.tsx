@@ -23,7 +23,7 @@ function Skills() {
             >
               <div className="flex items-center gap-3">
                 <i
-                  className={`${categoryIcons[category.name] || "fa-solid fa-tag"} text-lg text-primary`}
+                  className={`${categoryIcons[category.name] || "fa-solid fa-tag"} text-lg text-accent`}
                 />
                 <h3 className="font-heading text-[0.8rem] font-semibold uppercase tracking-[0.1em] text-text-secondary">
                   {category.name}

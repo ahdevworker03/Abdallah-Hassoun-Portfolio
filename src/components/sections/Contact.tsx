@@ -93,7 +93,7 @@ function Contact() {
       inputBase,
       errors[field] && touched[field]
         ? "border-red-500 focus:border-red-500"
-        : "border-border focus:border-primary",
+        : "border-border focus:border-primary focus:ring-2 focus:ring-focus-ring",
     ].join(" ")
 
   return (
@@ -183,7 +183,7 @@ function Contact() {
 
             {FORMSPREE_MISSING && (
               <div
-                className="rounded-md bg-amber-50 px-4 py-3 text-sm text-amber-700 dark:bg-amber-900/20 dark:text-amber-400"
+                className="rounded-md bg-amber-900/20 px-4 py-3 text-sm text-amber-400"
                 role="alert"
               >
                 The contact form is not configured yet. Please email me directly using the links below.
@@ -192,7 +192,7 @@ function Contact() {
 
             {status === "error" && (
               <div
-                className="rounded-md bg-red-50 px-4 py-3 text-sm text-red-600 dark:bg-red-900/20 dark:text-red-400"
+                className="rounded-md bg-red-900/20 px-4 py-3 text-sm text-red-400"
                 role="alert"
               >
                 Something went wrong. Please try again or email me directly.

@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from "react"
 import { navLinks } from "../../data/navigation"
 import useScrolledNav from "../../hooks/useScrolledNav"
 import useScrollSpy from "../../hooks/useScrollSpy"
-import ThemeToggle from "../ui/ThemeToggle"
 
 const sectionIds = ["hero", "about", "skills", "projects", "contact"]
 
@@ -43,12 +42,10 @@ function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-full max-w-[1000px] items-center justify-between px-4">
-        <a href="#hero" className="flex items-center gap-[0.6rem] font-heading text-[1.2rem] font-bold text-primary no-underline">
-          <img
-            src="/favicon_io/apple-touch-icon.png"
-            alt="Abdallah Hassoun"
-            className="block h-8 w-8 rounded-full object-cover"
-          />
+        <a
+          href="#hero"
+          className="flex items-center gap-[0.6rem] font-heading text-[1.2rem] font-bold text-primary no-underline"
+        >
           Abdallah Hassoun
         </a>
 
@@ -87,11 +84,16 @@ function Navbar() {
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((prev) => !prev)}
           >
-            <span className={`block h-[2px] w-6 rounded-sm bg-text-primary transition-all duration-300 ease-smooth ${menuOpen ? "translate-y-[7px] rotate-45" : ""}`} />
-            <span className={`block h-[2px] w-6 rounded-sm bg-text-primary transition-all duration-300 ease-smooth ${menuOpen ? "opacity-0" : ""}`} />
-            <span className={`block h-[2px] w-6 rounded-sm bg-text-primary transition-all duration-300 ease-smooth ${menuOpen ? "-translate-y-[7px] -rotate-45" : ""}`} />
+            <span
+              className={`block h-[2px] w-6 rounded-sm bg-text-primary transition-all duration-300 ease-smooth ${menuOpen ? "translate-y-[7px] rotate-45" : ""}`}
+            />
+            <span
+              className={`block h-[2px] w-6 rounded-sm bg-text-primary transition-all duration-300 ease-smooth ${menuOpen ? "opacity-0" : ""}`}
+            />
+            <span
+              className={`block h-[2px] w-6 rounded-sm bg-text-primary transition-all duration-300 ease-smooth ${menuOpen ? "-translate-y-[7px] -rotate-45" : ""}`}
+            />
           </button>
-          <ThemeToggle />
         </div>
       </div>
     </nav>
