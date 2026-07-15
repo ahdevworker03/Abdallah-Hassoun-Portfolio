@@ -19,7 +19,7 @@ function Skills() {
           {skillCategories.map((category) => (
             <div
               key={category.name}
-              className="flex flex-col gap-3 rounded-2xl border border-border bg-surface p-6 shadow-sm transition-all duration-200 overflow-hidden"
+              className="flex flex-col gap-3 rounded-2xl border border-border bg-surface p-6 shadow-sm transition-all duration-200"
             >
               <div className="flex items-center gap-3">
                 <i
