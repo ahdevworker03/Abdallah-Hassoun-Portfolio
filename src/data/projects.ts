@@ -7,24 +7,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Workly — Service Marketplace",
+    title: "Abdallah Hassoun — Portfolio",
     description:
-      "A modern, responsive service marketplace homepage prototype designed to connect clients with skilled freelancers. Built with a focus on speed and clarity using pure CSS.",
-    tech: ["HTML", "CSS"],
-    githubUrl: "https://github.com/ahdevworker03/Workly-Homepage-Build-Plan",
+      "A modern, responsive portfolio built with React, TypeScript, and Tailwind CSS to showcase my projects, skills, and journey as a software engineering student.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/ahdevworker03/Abdallah-Hassoun-Portfolio",
   },
   {
-    title: "Aurora Stay Landing Page",
+    title: "Movie Shelf",
     description:
-      "Aurora Stay is a luxury-inspired hotel landing page built with HTML and CSS only. The design is modern, elegant, and responsive, with a calm premium tone throughout the layout.",
-    tech: ["HTML", "CSS"],
-    githubUrl: "https://github.com/ahdevworker03/Aurora-Stay-landing-page",
-  },
-  {
-    title: "Bean & Craft Coffee",
-    description:
-      "A sophisticated frontend project for a premium coffee brand. Features a warm visual identity, glassmorphism, and elegant hover effects using modular Vanilla CSS.",
-    tech: ["HTML", "CSS"],
-    githubUrl: "https://github.com/ahdevworker03/BeanCraft-Coffe",
+      "A movie discovery app built with React that lets users search for films, save them to a watchlist, track watched movies, and keep their data across sessions.",
+    tech: ["React", "JavaScript"],
+    githubUrl: "https://github.com/ahdevworker03/movie-shelf",
   },
 ]

@@ -6,18 +6,16 @@ function About() {
           About Me
         </h2>
         <p className="mb-4 text-base leading-relaxed text-text-secondary last:mb-0">
-          I'm a first-year Computer Science student currently learning the
-          fundamentals of programming and web development. I'm studying JavaScript
-          and TypeScript, and I've started building small web projects with
-          HTML and CSS to understand how things come together on the web.
+          I'm a second-year Computer Science student focused on frontend development and modern web
+          technologies. I'm studying JavaScript and TypeScript, and I enjoy building projects with
+          React and Tailwind CSS to strengthen my skills and understand how real applications are
+          made.
         </p>
         <p className="mb-4 text-base leading-relaxed text-text-secondary last:mb-0">
-          I'm interested in software engineering and problem solving, and I
-          spend my time practicing coding challenges, learning new concepts,
-          and working on small projects. I'm not experienced yet, but I
-          believe in consistency and steady improvement. My goal right now is
-          to keep learning, keep building, and see where this journey takes
-          me.
+          I'm interested in software engineering and turning ideas into real, working applications.
+          I spend my time learning new technologies, improving my projects, and working toward
+          becoming a full-stack developer in the future. My goal right now is to keep growing
+          through hands-on work and continuous learning.
         </p>
       </div>
     </section>

@@ -13,11 +13,7 @@ export const contactLinks: ContactLink[] = [
     url: "https://www.linkedin.com/in/ahdevworker03/",
   },
   {
-    label: "GitHub",
-    url: "https://github.com/ahdevworker03",
-  },
-  {
-    label: "Send Email",
-    url: "mailto:ahdevworker03@gmail.com",
+    label: "Whatsapp",
+    url: "https://wa.me/96171819509",
   },
 ]

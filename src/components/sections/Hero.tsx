@@ -11,6 +11,11 @@ const socialLinks = [
     url: "https://www.linkedin.com/in/ahdevworker03/",
     icon: "fa-brands fa-linkedin",
   },
+  {
+    label: "Instagram",
+    url: "https://www.instagram.com/ahdevworker03/",
+    icon: "fa-brands fa-instagram",
+  },
 ]
 
 function Hero() {
@@ -27,32 +32,23 @@ function Hero() {
           height={120}
           className="mb-6 h-[120px] w-[120px] rounded-full border-[3px] border-primary-soft object-cover shadow-lg md:h-[140px] md:w-[140px]"
         />
-        <p className="mb-2 text-sm uppercase tracking-widest text-text-secondary">
-          Hi, I'm
-        </p>
+        <p className="mb-2 text-sm uppercase tracking-widest text-text-secondary">Hi, I'm</p>
         <h1 className="mb-6 font-heading text-5xl font-bold leading-tight tracking-tighter text-text-primary md:text-7xl gradient-text">
           Abdallah Hassoun
         </h1>
         <p className="mb-5 text-lg font-medium leading-relaxed text-text-secondary">
-          First-year CS Student &middot; Aspiring Software Engineer
+          Second-Year Computer Science Student &middot; Frontend Developer
         </p>
         <p className="mb-8 max-w-[560px] text-base leading-relaxed text-text-secondary">
-          I build things to learn. Currently exploring web development,
-          algorithms, and what it means to write good code.
+          I enjoy turning ideas into real, working applications while continuously improving my
+          skills through hands-on projects. Currently building with React & TypeScript as I work
+          toward becoming a full-stack developer.
         </p>
         <div className="flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center">
-          <Button
-            variant="primary"
-            href="#projects"
-            className="w-full max-w-[280px] md:w-auto"
-          >
+          <Button variant="primary" href="#projects" className="w-full max-w-[280px] md:w-auto">
             View My Projects
           </Button>
-          <Button
-            variant="secondary"
-            href="#contact"
-            className="w-full max-w-[280px] md:w-auto"
-          >
+          <Button variant="secondary" href="#contact" className="w-full max-w-[280px] md:w-auto">
             Get In Touch
           </Button>
           <Button
