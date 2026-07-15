@@ -39,9 +39,9 @@ Personal portfolio website for Abdallah Hassoun, a first-year Computer Science s
 src/
 ├── components/
 │   ├── layout/       # Navbar, Footer
-│   ├── sections/     # Hero, About, Skills, Projects, Contact
+│   ├── sections/     # Hero, About, Skills, Projects, Education, Contact
 │   └── ui/           # Button, ProjectCard, SkillPill, ScrollToTop
-├── data/             # Static content (navigation, skills, projects, contact)
+├── data/             # Static content (navigation, skills, education, projects, contact)
 ├── hooks/            # useScrollSpy, useScrollReveal, useScrolledNav
 ├── App.tsx           # Root component
 ├── main.tsx          # Entry point
