@@ -131,33 +131,6 @@ npx vercel --prod
 - GPU-accelerated animations (opacity and transform only)
 - No external runtime dependencies beyond React
 
-## Screenshots
-
-_Screenshots coming soon._
-
-## Future Improvements
-
-- Project screenshots with live demo links
-- Self-hosted fonts (remove Google Fonts CDN dependency)
-- Tree-shaken icon library (replace full Font Awesome CDN with individual imports)
-
-## Documentation
-
-- [Architecture](docs/01-architecture.md) — project structure, data flow, state management
-- [Development Rules](docs/02-development-rules.md) — guidelines for contributing
-- [Design System](docs/03-design-system.md) — colors, typography, components
-- [Content Guide](docs/04-content-guide.md) — editing portfolio content
-- [Roadmap](docs/05-roadmap.md) — planned improvements
-- [Changelog](docs/06-changelog.md) — version history
-
-## Contributing
-
-See [Development Rules](docs/02-development-rules.md) for guidelines before making changes.
-
-## License
-
-This project is for personal portfolio use.
-
 ## Author
 
 **Abdallah Hassoun**
