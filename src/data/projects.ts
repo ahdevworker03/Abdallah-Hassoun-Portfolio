@@ -20,4 +20,11 @@ export const projects: Project[] = [
     tech: ["React", "JavaScript"],
     githubUrl: "https://github.com/ahdevworker03/movie-shelf",
   },
+  {
+    title: "Rick & Morty Characters",
+    description:
+      "AA React project demonstrating API consumption, component composition, and state management by displaying Rick and Morty characters with images, status indicators, and detailed information in a responsive grid layout.",
+    tech: ["React", "JavaScript"],
+    githubUrl: "https://github.com/ahdevworker03/Rick-Morty-App",
+  },
 ]
