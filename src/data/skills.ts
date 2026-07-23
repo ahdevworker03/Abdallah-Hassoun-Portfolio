@@ -10,11 +10,11 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     name: "Frontend",
-    items: ["HTML", "CSS", "HTML5", "CSS3", "Tailwind CSS", "React", "Vite", "Responsive Design"],
+    items: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
   },
   {
     name: "Developer Tools",
-    items: ["Git", "GitHub", "npm", "VS Code", "Postman", "Vercel", "Linux (Ubuntu)"],
+    items: ["Git & GitHub", "npm", "pnpm", "Postman", "Vercel", "Linux (Ubuntu)"],
   },
   {
     name: "Core Concepts",
@@ -24,8 +24,6 @@ export const skillCategories: SkillCategory[] = [
       "State Management",
       "DOM Manipulation",
       "API Integration",
-      "Object-Oriented Programming",
-      "Data Structures & Algorithms",
     ],
   },
 ]
