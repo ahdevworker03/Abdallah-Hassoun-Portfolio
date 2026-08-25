@@ -39,7 +39,7 @@ export const skillCategories: SkillCategory[] = [
       "State Management",
       "API Integration",
       "Database Design",
-      "Authentication Authorization",
+      "Authentication & Authorization",
       "Responsive Design",
       "Multi-Tenant Applications",
     ],

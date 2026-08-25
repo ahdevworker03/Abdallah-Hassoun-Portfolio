@@ -6,16 +6,15 @@ function About() {
           About Me
         </h2>
         <p className="mb-4 text-base leading-relaxed text-text-secondary last:mb-0">
-          I'm a second-year Computer Science student focused on frontend development and modern web
-          technologies. I'm studying JavaScript and TypeScript, and I enjoy building projects with
-          React and Tailwind CSS to strengthen my skills and understand how real applications are
-          made.
+          I'm a Computer Science student at the Lebanese International University with hands-on
+          experience in web development. I started with frontend development and expanded into
+          backend and database work as my projects became more complex.
         </p>
         <p className="mb-4 text-base leading-relaxed text-text-secondary last:mb-0">
-          I'm interested in software engineering and turning ideas into real, working applications.
-          I spend my time learning new technologies, improving my projects, and working toward
-          becoming a full-stack developer in the future. My goal right now is to keep growing
-          through hands-on work and continuous learning.
+          I currently work with React, TypeScript, Node.js, Express, PostgreSQL, and Prisma, and I'm
+          building a full-stack vehicle rental platform to apply these skills. I'm looking for a Web
+          Developer internship where I can contribute, learn from an experienced team, and continue
+          growing as a full-stack developer.
         </p>
       </div>
     </section>

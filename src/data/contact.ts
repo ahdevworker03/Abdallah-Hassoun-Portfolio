@@ -1,19 +1,26 @@
-export interface ContactLink {
+export interface ContactDetail {
   label: string
-  url: string
+  value: string
+  icon: string
+  url?: string
 }
 
-export const contactLinks: ContactLink[] = [
+export const contactDetails: ContactDetail[] = [
   {
-    label: "Instagram",
-    url: "https://www.instagram.com/abdallahhassoun.dev/",
+    label: "Location",
+    value: "Tripoli, Lebanon",
+    icon: "fa-solid fa-location-dot",
   },
   {
-    label: "LinkedIn",
-    url: "https://www.linkedin.com/in/ahdevworker03/",
+    label: "Email",
+    value: "ahdevworker03@gmail.com",
+    icon: "fa-solid fa-envelope",
+    url: "mailto:ahdevworker03@gmail.com",
   },
   {
-    label: "Whatsapp",
-    url: "https://wa.me/96171819509",
+    label: "Phone",
+    value: "+961 71 819 509",
+    icon: "fa-solid fa-phone",
+    url: "tel:+96171819509",
   },
 ]

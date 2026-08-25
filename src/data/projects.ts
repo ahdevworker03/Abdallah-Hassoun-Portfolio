@@ -19,7 +19,7 @@ export const projects: Project[] = [
     title: "Abdallah Hassoun — Portfolio",
     description:
       "A modern, responsive portfolio built with React, TypeScript, and Tailwind CSS to showcase my projects, skills, and journey as a software engineering student.",
-    tech: ["React", "TypeScript", "Tailwind CSS"],
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     githubUrl: "https://github.com/ahdevworker03/Abdallah-Hassoun-Portfolio",
     liveUrl: "https://www.abdallahhassoun.com/",
   },

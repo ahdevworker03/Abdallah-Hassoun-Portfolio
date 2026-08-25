@@ -37,12 +37,11 @@ function Hero() {
           Abdallah Hassoun
         </h1>
         <p className="mb-5 text-lg font-medium leading-relaxed text-text-secondary">
-          Second-Year Computer Science Student &middot; Frontend Developer
+          Second-Year Computer Science Student &middot; Full-Stack Web Developer
         </p>
         <p className="mb-8 max-w-[560px] text-base leading-relaxed text-text-secondary">
-          I enjoy turning ideas into real, working applications while continuously improving my
-          skills through hands-on projects. Currently building with React & TypeScript as I work
-          toward becoming a full-stack developer.
+          I build practical web applications with React, TypeScript, Node.js, Express, PostgreSQL,
+          and Prisma while developing a full-stack vehicle rental platform.
         </p>
         <div className="flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center">
           <Button variant="primary" href="#projects" className="w-full max-w-[280px] md:w-auto">
