@@ -15,6 +15,7 @@ export interface TrainingItem {
   provider?: string
   instructor?: string
   status: string
+  courseUrl?: string
   certificateUrl?: string
 }
 
@@ -29,26 +30,32 @@ export const education: Education = {
 
 export const trainingItems: TrainingItem[] = [
   {
-    title: "Onsite Frontend Web Development Training",
-    location: "Nahr al-Bared, North Lebanon",
-    description:
-      "Completed hands-on training in HTML, CSS, Git, GitHub, and Responsive Web Development.",
-    duration: "30 Hours",
-    status: "Completed",
-    certificateUrl: "https://ibb.co/LdKb7Dhb",
-  },
-  {
     title: "Understanding TypeScript",
     provider: "Udemy",
     instructor: "Maximilian Schwarzmüller",
     status: "Completed",
-    certificateUrl:
-      "https://www.udemy.com/certificate/UC-eef49c33-0204-4277-8a8c-c765cc65cbd4/",
+    courseUrl: "https://www.udemy.com/course/understanding-typescript/",
+    certificateUrl: "https://www.udemy.com/certificate/UC-eef49c33-0204-4277-8a8c-c765cc65cbd4/",
   },
   {
-    title: "React – The Complete Guide",
+    title: "React — The Complete Guide (incl. Next.js, Redux)",
     provider: "Udemy",
     instructor: "Maximilian Schwarzmüller",
     status: "Ongoing",
+    courseUrl: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
+  },
+  {
+    title: "NodeJS — The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+    provider: "Udemy",
+    instructor: "Maximilian Schwarzmüller",
+    status: "Ongoing",
+    courseUrl: "https://www.udemy.com/course/nodejs-the-complete-guide/",
+  },
+  {
+    title: "SQL — The Complete Developer's Guide (MySQL, PostgreSQL)",
+    provider: "Udemy",
+    instructor: "Maximilian Schwarzmüller & Manuel Lorenz",
+    status: "Ongoing",
+    courseUrl: "https://www.udemy.com/course/sql-the-complete-developers-guide-mysql-postgresql/",
   },
 ]

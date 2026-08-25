@@ -99,6 +99,19 @@ function Education() {
                     {item.status}
                   </span>
 
+                  {item.courseUrl && (
+                    <a
+                      href={item.courseUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-accent no-underline transition-all duration-200 hover:scale-[1.02] hover:text-primary"
+                      aria-label={`${item.title} — View Course`}
+                    >
+                      <i className="fa-solid fa-arrow-up-right-from-square text-[0.65rem]" />
+                      Course
+                    </a>
+                  )}
+
                   {item.certificateUrl && (
                     <a
                       href={item.certificateUrl}
