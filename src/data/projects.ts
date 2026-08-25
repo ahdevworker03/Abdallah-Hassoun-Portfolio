@@ -8,12 +8,11 @@ export interface Project {
 }
 export const projects: Project[] = [
   {
-    title: "Car Rental Management System",
+    title: "Vehicle Rental Management SaaS",
     description:
-      "A frontend-first MVP for managing car rental businesses with an Arabic RTL mobile-first interface, built to validate the product before backend development.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Vite", "shadcn/ui"],
-    githubUrl: "https://github.com/ahdevworker03/car-rental-management-system",
-    liveUrl: "https://car-rental-management-system-car-re.vercel.app/",
+      "A full-stack, multi-tenant vehicle rental SaaS built with React, Node.js, PostgreSQL, and Prisma. Features authentication, rental workflows, analytics, and a responsive Arabic RTL dashboard.",
+    tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Tailwind CSS"],
+    githubUrl: "https://github.com/ahdevworker03/vehicle-rental-platform",
     featured: true,
   },
   {

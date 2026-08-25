@@ -3,9 +3,11 @@ import SkillPill from "../ui/SkillPill"
 
 const categoryIcons: Record<string, string> = {
   Languages: "fa-solid fa-code",
-  Web: "fa-solid fa-globe",
-  Tools: "fa-solid fa-screwdriver-wrench",
-  Concepts: "fa-solid fa-lightbulb",
+  Frontend: "fa-solid fa-globe",
+  Backend: "fa-solid fa-server",
+  Database: "fa-solid fa-database",
+  "Developer Tools": "fa-solid fa-screwdriver-wrench",
+  "Core Concepts": "fa-solid fa-lightbulb",
 }
 
 function Skills() {
@@ -15,7 +17,7 @@ function Skills() {
         <h2 className="mb-10 font-heading text-3xl font-semibold leading-tight text-text-primary md:text-4xl">
           Skills
         </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {skillCategories.map((category) => (
             <div
               key={category.name}

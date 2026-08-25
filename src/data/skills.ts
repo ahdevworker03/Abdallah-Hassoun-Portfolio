@@ -10,11 +10,26 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     name: "Frontend",
-    items: ["React", "Vite", "Tailwind CSS", "Responsive Design"],
+    items: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Responsive Web Design",
+      "RTL Interfaces",
+    ],
+  },
+  {
+    name: "Backend",
+    items: ["Node.js", "Express.js", "REST API Development"],
+  },
+  {
+    name: "Database",
+    items: ["PostgreSQL", "Prisma ORM", "SQL"],
   },
   {
     name: "Developer Tools",
-    items: ["Git & GitHub", "npm", "pnpm", "Postman", "Vercel", "Linux (Ubuntu)"],
+    items: ["Git", "GitHub", "pnpm", "npm", "Postman", "Vercel", "Docker", "Linux (Ubuntu)"],
   },
   {
     name: "Core Concepts",
@@ -22,8 +37,11 @@ export const skillCategories: SkillCategory[] = [
       "Component-Based Architecture",
       "React Hooks",
       "State Management",
-      "DOM Manipulation",
       "API Integration",
+      "Database Design",
+      "Authentication Authorization",
+      "Responsive Design",
+      "Multi-Tenant Applications",
     ],
   },
 ]
