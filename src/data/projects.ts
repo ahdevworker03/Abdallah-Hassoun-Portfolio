@@ -18,7 +18,7 @@ export const projects: Project[] = [
   {
     title: "Abdallah Hassoun — Portfolio",
     description:
-      "A modern, responsive portfolio built with React, TypeScript, and Tailwind CSS to showcase my projects, skills, and journey as a software engineering student.",
+      "A responsive personal portfolio built to showcase my software engineering projects, skills, education, and experience in one place. Developed with React, TypeScript, Vite, and Tailwind CSS, with reusable components, scroll-based interactions, a validated contact form, downloadable CV, and accessibility features including keyboard navigation and reduced-motion support. The site uses a data-driven structure that separates portfolio content from the UI, making projects and skills easy to maintain without changing component logic.",
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     githubUrl: "https://github.com/ahdevworker03/Abdallah-Hassoun-Portfolio",
     liveUrl: "https://www.abdallahhassoun.com/",
