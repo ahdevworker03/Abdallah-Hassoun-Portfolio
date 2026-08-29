@@ -8,9 +8,9 @@ export interface Project {
 }
 export const projects: Project[] = [
   {
-    title: "Vehicle Rental Management SaaS",
+    title: "Multi-tenant vehicle rental management SaaS",
     description:
-      "A full-stack, multi-tenant vehicle rental SaaS built with React, Node.js, PostgreSQL, and Prisma. Features authentication, rental workflows, analytics, and a responsive Arabic RTL dashboard.",
+      "A full-stack, multi-tenant SaaS built for vehicle rental businesses to manage customers, vehicles, rentals, payments, maintenance, expenses, tasks, and business insights from one platform. Built with React, TypeScript, Node.js, Express, PostgreSQL, Prisma, and Tailwind CSS, with authentication, role-based access, organization-level data isolation, an Arabic RTL interface, dashboards, reporting, and operational workflows. Uses a contract-first OpenAPI architecture to generate typed React Query clients and Zod validation schemas across the frontend and backend.",
     tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Tailwind CSS"],
     githubUrl: "https://github.com/ahdevworker03/vehicle-rental-platform",
     featured: true,
