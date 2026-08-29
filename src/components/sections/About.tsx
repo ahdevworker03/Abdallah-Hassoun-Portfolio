@@ -11,10 +11,9 @@ function About() {
           backend and database work as my projects became more complex.
         </p>
         <p className="mb-4 text-base leading-relaxed text-text-secondary last:mb-0">
-          I currently work with React, TypeScript, Node.js, Express, PostgreSQL, and Prisma, and I'm
-          building a full-stack vehicle rental platform to apply these skills. I'm looking for a Web
-          Developer internship where I can contribute, learn from an experienced team, and continue
-          growing as a full-stack developer.
+          I work mainly with React, TypeScript, Node.js, Express, PostgreSQL, and Prisma, and I
+          focus on building practical, maintainable software that solves real problems and helps me
+          strengthen my engineering skills through real projects.
         </p>
       </div>
     </section>
