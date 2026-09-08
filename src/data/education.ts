@@ -20,7 +20,7 @@ export interface TrainingItem {
 }
 
 export const education: Education = {
-  institution: "Lebanese International University (LIU)",
+  institution: "Jinan University (JU)",
   location: "Tripoli, Lebanon",
   degree: "Bachelor of Science in Computer Science",
   expectedGraduation: "July 2028",
