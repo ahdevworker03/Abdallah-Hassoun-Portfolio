@@ -6,8 +6,11 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=white)](https://vercel.com)
 
-Personal portfolio website for Abdallah Hassoun, a second-year Computer Science student and aspiring software engineer. Built to showcase projects, skills, education, and provide a way to get in touch.
+Personal portfolio for Abdallah Hassoun, a Junior Software Developer building real software products, automation systems, and full-stack applications.
 
+The site highlights client work, production projects, engineering skills, education, and ways to get in touch.
+
+**Live site:** https://www.abdallahhassoun.com
 **Live site**: [https://www.abdallahhassoun.com](https://www.abdallahhassoun.com)
 
 ## Features
@@ -39,7 +42,7 @@ Personal portfolio website for Abdallah Hassoun, a second-year Computer Science 
 src/
 ├── components/
 │   ├── layout/       # Navbar, Footer
-│   ├── sections/     # Hero, About, Skills, Projects, Education, Contact
+│   ├── sections/     # Hero, About, Experience, Projects, Skills, Education, Contact
 │   └── ui/           # Button, ProjectCard, SkillPill, ScrollToTop
 ├── data/             # Static content (navigation, skills, education, projects, contact)
 ├── hooks/            # useScrollSpy, useScrollReveal, useScrolledNav
