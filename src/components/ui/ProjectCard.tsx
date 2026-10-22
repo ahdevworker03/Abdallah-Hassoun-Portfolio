@@ -36,7 +36,7 @@ function ProjectCard({ project }: ProjectCardProps) {
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-2 py-1 text-sm font-medium text-white transition-all duration-200 hover:scale-[1.02] hover:opacity-90"
             >
               <i className="fa-solid fa-arrow-up-right-from-square text-xs" />
-              Live Demo
+              Live Product
             </a>
           )}
 

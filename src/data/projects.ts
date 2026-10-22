@@ -13,6 +13,7 @@ export const projects: Project[] = [
       "Production-ready multi-tenant vehicle rental SaaS for rental lifecycle operations, payments, maintenance, expenses, tasks, dashboards, and reports. Built with organization-level tenant isolation, role-based access, and a contract-first OpenAPI architecture, with automated regression testing and deployment work.",
     tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "OpenAPI", "Docker"],
     githubUrl: "https://github.com/ahdevworker03/markab",
+    liveUrl: "https://markab-lb.com",
     featured: true,
   },
   {

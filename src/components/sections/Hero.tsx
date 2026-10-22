@@ -13,7 +13,7 @@ const socialLinks = [
   },
   {
     label: "Instagram",
-    url: "https://www.instagram.com/ahdevworker03/",
+    url: "https://www.instagram.com/abdallahhassoun.dev/",
     icon: "fa-brands fa-instagram",
   },
 ]
