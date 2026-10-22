@@ -10,7 +10,6 @@ Personal portfolio for Abdallah Hassoun, a Junior Software Developer building re
 
 The site highlights client work, production projects, engineering skills, education, and ways to get in touch.
 
-**Live site:** https://www.abdallahhassoun.com
 **Live site**: [https://www.abdallahhassoun.com](https://www.abdallahhassoun.com)
 
 ## Features
@@ -132,7 +131,7 @@ npx vercel --prod
 - Static single-page build — no client-side routing overhead
 - CSS custom properties (no reflows on theme values)
 - GPU-accelerated animations (opacity and transform only)
-- No external runtime dependencies beyond React
+- Lightweight client-side architecture with minimal runtime overhead
 
 ## Author
 
