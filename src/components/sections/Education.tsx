@@ -5,7 +5,7 @@ function Education() {
     <section id="education" className="reveal bg-background py-20">
       <div className="mx-auto max-w-container px-4 md:px-8">
         <h2 className="mb-10 font-heading text-3xl font-semibold leading-tight text-text-primary md:text-4xl">
-          Education & Professional Development
+          Education & Training
         </h2>
 
         <div className="mb-10">
@@ -24,40 +24,24 @@ function Education() {
               {education.degree}
             </p>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-              <div>
-                <p className="mb-0.5 text-xs font-medium uppercase tracking-[0.05em] text-text-secondary">
-                  Expected Graduation
-                </p>
-                <p className="text-sm font-medium text-text-primary">
-                  {education.expectedGraduation}
-                </p>
-              </div>
-              <div>
-                <p className="mb-0.5 text-xs font-medium uppercase tracking-[0.05em] text-text-secondary">
-                  Current Status
-                </p>
-                <p className="text-sm font-medium text-text-primary">{education.status}</p>
-              </div>
-              <div>
-                <p className="mb-0.5 text-xs font-medium uppercase tracking-[0.05em] text-text-secondary">
-                  GPA
-                </p>
-                <p className="text-sm font-medium text-text-primary">{education.gpa}</p>
-              </div>
+            <div>
+              <p className="mb-0.5 text-xs font-medium uppercase tracking-[0.05em] text-text-secondary">
+                Expected Graduation
+              </p>
+              <p className="text-sm font-medium text-text-primary">
+                {education.expectedGraduation}
+              </p>
             </div>
           </div>
         </div>
 
         <div>
-          <h3 className="mb-4 font-heading text-lg font-semibold text-text-primary">
-            Professional Development
-          </h3>
-          <div className="flex flex-col gap-4">
+          <h3 className="mb-4 font-heading text-lg font-semibold text-text-primary">Training</h3>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {trainingItems.map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl border border-border bg-surface p-6 shadow-sm"
+                className="rounded-2xl border border-border bg-surface p-5 shadow-sm"
               >
                 <h4 className="mb-2 font-heading text-base font-medium text-text-primary">
                   {item.title}

@@ -6,14 +6,14 @@ function About() {
           About Me
         </h2>
         <p className="mb-4 text-base leading-relaxed text-text-secondary last:mb-0">
-          I'm a Computer Science student at the Lebanese International University with hands-on
-          experience in web development. I started with frontend development and expanded into
-          backend and database work as my projects became more complex.
+          I'm a Junior Software Developer with hands-on experience building and deploying real
+          software, including a paid client system and a multi-tenant SaaS product. I work across
+          React and TypeScript, Node.js and Express, and PostgreSQL with Prisma.
         </p>
         <p className="mb-4 text-base leading-relaxed text-text-secondary last:mb-0">
-          I work mainly with React, TypeScript, Node.js, Express, PostgreSQL, and Prisma, and I
-          focus on building practical, maintainable software that solves real problems and helps me
-          strengthen my engineering skills through real projects.
+          My work spans REST APIs, automation, testing, and Linux/cloud deployment. I focus on
+          practical problem-solving and maintainable software, using AI-assisted development with
+          manual and automated verification.
         </p>
       </div>
     </section>

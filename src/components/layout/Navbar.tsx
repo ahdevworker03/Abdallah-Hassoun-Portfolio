@@ -3,7 +3,7 @@ import { navLinks } from "../../data/navigation"
 import useScrolledNav from "../../hooks/useScrolledNav"
 import useScrollSpy from "../../hooks/useScrollSpy"
 
-const sectionIds = ["hero", "about", "skills", "projects", "contact"]
+const sectionIds = ["hero", "about", "experience", "projects", "skills", "education", "contact"]
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)

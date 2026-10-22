@@ -8,19 +8,35 @@ export interface Project {
 }
 export const projects: Project[] = [
   {
-    title: "Multi-tenant vehicle rental management SaaS",
+    title: "Markab — مَركب",
     description:
-      "A full-stack, multi-tenant SaaS built for vehicle rental businesses to manage customers, vehicles, rentals, payments, maintenance, expenses, tasks, and business insights from one platform. Built with React, TypeScript, Node.js, Express, PostgreSQL, Prisma, and Tailwind CSS, with authentication, role-based access, organization-level data isolation, an Arabic RTL interface, dashboards, reporting, and operational workflows. Uses a contract-first OpenAPI architecture to generate typed React Query clients and Zod validation schemas across the frontend and backend.",
-    tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Tailwind CSS"],
-    githubUrl: "https://github.com/ahdevworker03/vehicle-rental-platform",
+      "Production-ready multi-tenant vehicle rental SaaS for rental lifecycle operations, payments, maintenance, expenses, tasks, dashboards, and reports. Built with organization-level tenant isolation, role-based access, and a contract-first OpenAPI architecture, with automated regression testing and deployment work.",
+    tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "OpenAPI", "Docker"],
+    githubUrl: "https://github.com/ahdevworker03/markab",
     featured: true,
   },
   {
-    title: "Abdallah Hassoun — Portfolio",
+    title: "WhatsApp Outreach Dashboard",
     description:
-      "A responsive personal portfolio built to showcase my software engineering projects, skills, education, and experience in one place. Developed with React, TypeScript, Vite, and Tailwind CSS, with reusable components, scroll-based interactions, a validated contact form, downloadable CV, and accessibility features including keyboard navigation and reduced-motion support. The site uses a data-driven structure that separates portfolio content from the UI, making projects and skills easy to maintain without changing component logic.",
-    tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-    githubUrl: "https://github.com/ahdevworker03/Abdallah-Hassoun-Portfolio",
-    liveUrl: "https://www.abdallahhassoun.com/",
+      "A deployed client dashboard for WhatsApp campaigns, contact management, conversations, and automated follow-ups using the official Meta WhatsApp Cloud API.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
+      "Meta WhatsApp Cloud API",
+      "Webhooks",
+      "Linux VPS",
+    ],
+    githubUrl: "https://github.com/ahdevworker03/whatsapp-business-automation",
+  },
+  {
+    title: "Content OS — AI-Assisted Content Production & Rendering System",
+    description:
+      "An AI-assisted content production system with structured workflows, reusable renderer models and layouts, and a React/TypeScript Studio for reviewing and editing carousel output. Includes deterministic PNG, PDF, and ZIP exports through an automated Playwright capture pipeline with render-integrity checks.",
+    tech: ["React", "TypeScript", "Vite", "Playwright", "JSON-based Content Workflows"],
+    githubUrl: "https://github.com/ahdevworker03/Content-OS",
   },
 ]

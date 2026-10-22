@@ -4,10 +4,13 @@ import SkillPill from "../ui/SkillPill"
 const categoryIcons: Record<string, string> = {
   Languages: "fa-solid fa-code",
   Frontend: "fa-solid fa-globe",
-  Backend: "fa-solid fa-server",
+  "Backend & APIs": "fa-solid fa-server",
   Database: "fa-solid fa-database",
-  "Developer Tools": "fa-solid fa-screwdriver-wrench",
-  "Core Concepts": "fa-solid fa-lightbulb",
+  Testing: "fa-solid fa-vial",
+  Engineering: "fa-solid fa-gears",
+  "Deployment & Tools": "fa-solid fa-screwdriver-wrench",
+  "AI-Assisted Development": "fa-solid fa-wand-magic-sparkles",
+  "Spoken Languages": "fa-solid fa-language",
 }
 
 function Skills() {

@@ -3,8 +3,6 @@ export interface Education {
   location: string
   degree: string
   expectedGraduation: string
-  status: string
-  gpa: string
 }
 
 export interface TrainingItem {
@@ -20,12 +18,10 @@ export interface TrainingItem {
 }
 
 export const education: Education = {
-  institution: "Jinan University (JU)",
+  institution: "Jinan University",
   location: "Tripoli, Lebanon",
   degree: "Bachelor of Science in Computer Science",
-  expectedGraduation: "July 2028",
-  status: "Second-Year Student",
-  gpa: "3.08 / 4.00",
+  expectedGraduation: "June 2028",
 }
 
 export const trainingItems: TrainingItem[] = [

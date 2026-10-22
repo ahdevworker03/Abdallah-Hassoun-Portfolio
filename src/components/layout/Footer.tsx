@@ -8,7 +8,7 @@ function Footer() {
           <p className="m-0 text-sm text-text-secondary">
             &copy; 2026 Abdallah Hassoun.
           </p>
-          <nav aria-label="Quick navigation" className="flex gap-5">
+          <nav aria-label="Quick navigation" className="flex flex-wrap justify-center gap-x-4 gap-y-2">
             {navLinks.map((link) => (
               <a
                 key={link.href}

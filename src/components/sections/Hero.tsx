@@ -37,11 +37,11 @@ function Hero() {
           Abdallah Hassoun
         </h1>
         <p className="mb-5 text-lg font-medium leading-relaxed text-text-secondary">
-          Second-Year Computer Science Student &middot; Full-Stack Web Developer
+          Junior Software Developer
         </p>
         <p className="mb-8 max-w-[560px] text-base leading-relaxed text-text-secondary">
-          I build practical web applications with React, TypeScript, Node.js, Express, PostgreSQL,
-          and Prisma while developing a full-stack vehicle rental platform.
+          I build and deliver full-stack web applications, business automation systems, and
+          production-ready software across APIs, databases, testing, and deployment.
         </p>
         <div className="flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center">
           <Button variant="primary" href="#projects" className="w-full max-w-[280px] md:w-auto">
@@ -52,7 +52,7 @@ function Hero() {
           </Button>
           <Button
             variant="cv"
-            href="/CV File/Abdallah Hassoun.pdf"
+            href="/CV File/Abdallah-Hassoun.pdf"
             download="Abdallah-Hassoun-CV"
             className="w-full max-w-[280px] md:w-auto"
           >
