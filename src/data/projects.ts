@@ -3,8 +3,6 @@ export interface Project {
   description: string
   tech: string[]
   githubUrl: string
-  image?: string
-  imageAlt?: string
   liveUrl?: string
   featured?: boolean
 }
@@ -15,8 +13,6 @@ export const projects: Project[] = [
       "Production-ready multi-tenant vehicle rental SaaS for rental lifecycle operations, payments, maintenance, expenses, tasks, dashboards, and reports. Built with organization-level tenant isolation, role-based access, and a contract-first OpenAPI architecture, with automated regression testing and deployment work.",
     tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "OpenAPI", "Docker"],
     githubUrl: "https://github.com/ahdevworker03/markab",
-    image: "/images/markab-dashboard.png",
-    imageAlt: "Markab vehicle rental management dashboard",
     liveUrl: "https://markab-lb.com",
     featured: true,
   },
