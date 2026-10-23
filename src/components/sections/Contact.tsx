@@ -107,7 +107,7 @@ function Contact() {
                 Let's Connect
               </h2>
               <p className="mb-8 text-base leading-relaxed text-text-secondary">
-                I'm open to junior software development opportunities, freelance projects, and
+                I'm open to software development opportunities, freelance projects, and
                 conversations around software, automation, and product development.
               </p>
 

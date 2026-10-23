@@ -6,7 +6,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=white)](https://vercel.com)
 
-Personal portfolio for Abdallah Hassoun, a Junior Software Developer building real software products, automation systems, and full-stack applications.
+Personal portfolio for Abdallah Hassoun, a Software Developer building real software products, automation systems, and full-stack applications from requirements through deployment.
 
 The site highlights client work, production projects, engineering skills, education, and ways to get in touch.
 

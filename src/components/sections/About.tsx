@@ -6,14 +6,15 @@ function About() {
           About Me
         </h2>
         <p className="mb-4 text-base leading-relaxed text-text-secondary last:mb-0">
-          I'm a Junior Software Developer with hands-on experience building and deploying real
-          software, including a paid client system and a multi-tenant SaaS product. I work across
-          React and TypeScript, Node.js and Express, and PostgreSQL with Prisma.
+          I'm a Software Developer with hands-on paid client experience and production product
+          experience, including a client system and a multi-tenant SaaS product. I work from
+          requirements to deployment, turning business workflows into maintainable software across
+          React and TypeScript, Node.js and Express, APIs, and PostgreSQL with Prisma.
         </p>
         <p className="mb-4 text-base leading-relaxed text-text-secondary last:mb-0">
           My work spans REST APIs, automation, testing, and Linux/cloud deployment. I focus on
-          practical problem-solving and maintainable software, using AI-assisted development with
-          manual and automated verification.
+          practical problem-solving and maintainability, using AI-assisted development as part of an
+          engineering workflow alongside manual and automated verification.
         </p>
       </div>
     </section>

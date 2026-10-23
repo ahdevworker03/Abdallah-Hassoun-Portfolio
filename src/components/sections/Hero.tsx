@@ -37,11 +37,11 @@ function Hero() {
           Abdallah Hassoun
         </h1>
         <p className="mb-5 text-lg font-medium leading-relaxed text-text-secondary">
-          Junior Software Developer
+          Software Developer
         </p>
         <p className="mb-8 max-w-[560px] text-base leading-relaxed text-text-secondary">
-          I build and deliver full-stack web applications, business automation systems, and
-          production-ready software across APIs, databases, testing, and deployment.
+          I turn business workflows into maintainable software products, from full-stack applications
+          and automation systems to testing and deployment.
         </p>
         <div className="flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center">
           <Button variant="primary" href="#projects" className="w-full max-w-[280px] md:w-auto">
