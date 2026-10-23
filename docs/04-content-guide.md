@@ -329,14 +329,14 @@ Edit the content inside the `<head>` tag:
 
 | Tag                        | Line | Current Value                                               |
 | -------------------------- | ---- | ----------------------------------------------------------- |
-| `<title>`                  | 35   | `Abdallah Hassoun — Portfolio`                              |
-| `<meta name="description">`| 25   | `Abdallah Hassoun — First-year CS student and aspiring software engineer. Portfolio of web development projects, skills, and contact information.` |
-| `<meta property="og:title">` | 26 | `Abdallah Hassoun — Portfolio`                              |
-| `<meta property="og:description">` | 27 | `First-year CS student. Web developer. Building things to learn.` |
+| `<title>`                  | 35   | `Abdallah Hassoun — Software Developer`                    |
+| `<meta name="description">`| 25   | `Software Developer with hands-on experience turning business workflows into maintainable software, from full-stack applications and automation to APIs, testing, and deployment.` |
+| `<meta property="og:title">` | 26 | `Abdallah Hassoun — Software Developer`                    |
+| `<meta property="og:description">` | 27 | `Software Developer with hands-on experience turning business workflows into maintainable software, from full-stack applications and automation to APIs, testing, and deployment.` |
 | `<meta property="og:image">` | 28  | `https://www.abdallahhassoun.com/og-image.png`              |
 | `<meta property="og:url">` | 29    | `https://www.abdallahhassoun.com/`                          |
-| `<meta name="twitter:title">` | 32 | `Abdallah Hassoun — Portfolio`                             |
-| `<meta name="twitter:description">` | 33 | `First-year CS student. Web developer.`                 |
+| `<meta name="twitter:title">` | 32 | `Abdallah Hassoun — Software Developer`                    |
+| `<meta name="twitter:description">` | 33 | `Software Developer with hands-on experience turning business workflows into maintainable software, from full-stack applications and automation to APIs, testing, and deployment.` |
 | `<meta name="twitter:image">` | 34  | `https://www.abdallahhassoun.com/og-image.png`              |
 
 **Rules:**

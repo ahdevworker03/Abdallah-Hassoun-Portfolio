@@ -2,7 +2,7 @@
 
 ## Overview
 
-A static single-page personal portfolio for Abdallah Hassoun, a first-year Computer Science student and aspiring software engineer. The site showcases projects, skills, and provides a contact form. Built with React 19, TypeScript, Vite, and Tailwind CSS. Content is separated from UI using plain TypeScript data files. There is no routing, no backend, and no external state management.
+A static single-page personal portfolio for Abdallah Hassoun, a Software Developer. The site showcases projects, skills, and provides a contact form. Built with React 19, TypeScript, Vite, and Tailwind CSS. Content is separated from UI using plain TypeScript data files. There is no routing, no backend, and no external state management.
 
 **Live URL:** https://www.abdallahhassoun.com
 
