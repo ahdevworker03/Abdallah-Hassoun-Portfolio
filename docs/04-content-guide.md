@@ -223,12 +223,10 @@ This file contains two exports:
 
 ```ts
 {
-  institution: "Lebanese International University (LIU)",
+  institution: "Jinan University",
   location: "Tripoli, Lebanon",
   degree: "Bachelor of Science in Computer Science",
-  expectedGraduation: "July 2028",
-  status: "Second-Year Student",
-  gpa: "3.08 / 4.00",
+  expectedGraduation: "June 2028",
 }
 ```
 
