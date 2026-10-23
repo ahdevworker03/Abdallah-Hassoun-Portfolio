@@ -140,4 +140,3 @@ npx vercel --prod
 - GitHub: [https://github.com/ahdevworker03](https://github.com/ahdevworker03)
 - LinkedIn: [https://www.linkedin.com/in/ahdevworker03/](https://www.linkedin.com/in/ahdevworker03/)
 - Instagram: [https://www.instagram.com/abdallahhassoun.dev/](https://www.instagram.com/abdallahhassoun.dev/)
-- X/Twitter: [https://x.com/ahdevworker03](https://x.com/ahdevworker03)
